@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6l-Er-97C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Job-->
+        <scene sceneID="kxC-hW-dHP">
+            <objects>
+                <viewController id="i1t-ar-5U3" customClass="FirstJobViewController" customModule="DZ1_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qeX-dG-glY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gna-EL-UxZ">
+                                <rect key="frame" x="0.0" y="74.5" width="375" height="543.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Руководство группой операторов (20 человек), помощь операторам в составлении рабочих планов, участие в обсуждении деятельности отдела и планирование ресурсов операторов для обеспечения этой деятельности, участие в специальных проектах, мониторинг деятельности операторов, анализ действий операторов и необходимая корректировка этих действий, оценка результатов деятельности операторов, участие в интервью при приеме на работу новых сотрудников, помощь операторам в конфликтных ситуациях, составление рабочего графика операторов, участие в процессе бюджетирования и выработки основной стратегии отдела.
+
+В ходе рботы приобрел опыт руководства, анализа и планирования.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Старший группы операторов (Supervisor)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWZ-CN-Qbf">
+                                <rect key="frame" x="5" y="20" width="328" height="44.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KG-EF-2Mb">
+                                <rect key="frame" x="343" y="31" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Rmt-LR-wf4"/>
+                                    <constraint firstAttribute="width" constant="22" id="osk-sm-39V"/>
+                                </constraints>
+                                <state key="normal" image="paint"/>
+                                <connections>
+                                    <action selector="actionSetColor:" destination="i1t-ar-5U3" eventType="touchUpInside" id="KFt-cv-tSk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gna-EL-UxZ" firstAttribute="top" secondItem="YWZ-CN-Qbf" secondAttribute="bottom" constant="10" id="0ao-kb-xOM"/>
+                            <constraint firstItem="CnS-2O-SE0" firstAttribute="bottom" secondItem="gna-EL-UxZ" secondAttribute="bottom" id="9bY-wU-HLw"/>
+                            <constraint firstItem="YWZ-CN-Qbf" firstAttribute="leading" secondItem="CnS-2O-SE0" secondAttribute="leading" constant="5" id="Avz-wX-ATn"/>
+                            <constraint firstItem="YWZ-CN-Qbf" firstAttribute="top" secondItem="CnS-2O-SE0" secondAttribute="top" id="BNa-Ch-v0S"/>
+                            <constraint firstItem="5KG-EF-2Mb" firstAttribute="top" secondItem="CnS-2O-SE0" secondAttribute="top" constant="11" id="G3t-3m-eel"/>
+                            <constraint firstItem="gna-EL-UxZ" firstAttribute="leading" secondItem="CnS-2O-SE0" secondAttribute="leading" id="RRK-vS-5KC"/>
+                            <constraint firstItem="5KG-EF-2Mb" firstAttribute="leading" secondItem="YWZ-CN-Qbf" secondAttribute="trailing" constant="10" id="Ysq-iS-nWl"/>
+                            <constraint firstItem="CnS-2O-SE0" firstAttribute="trailing" secondItem="gna-EL-UxZ" secondAttribute="trailing" id="mam-Y2-3Yh"/>
+                            <constraint firstItem="CnS-2O-SE0" firstAttribute="trailing" secondItem="5KG-EF-2Mb" secondAttribute="trailing" constant="10" id="ydG-6g-oPL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CnS-2O-SE0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First Job" image="first" id="WCm-i8-Bqy"/>
+                    <connections>
+                        <outlet property="textView" destination="gna-EL-UxZ" id="gYc-9B-nkz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qdl-7h-Bgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583.20000000000005" y="764.16791604197908"/>
+        </scene>
+        <!--Second Job-->
+        <scene sceneID="uVw-8A-ifU">
+            <objects>
+                <viewController id="hO6-ex-ZAF" customClass="SecondJobViewController" customModule="DZ1_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mh-zi-elb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JRc-J6-LJe">
+                                <rect key="frame" x="0.0" y="74.5" width="375" height="543.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Решение более сложных технических вопросов;
+Оценка качества обслуживания клиентов компании сотрудниками отдела; 
+Премирование и распределение премии между сотрудниками отдела; 
+Тестирование и аттестация сотрудников отдела;
+Написание справочно-информационного материала;
+Участие в процессе описания и модернизации процедур обслуживания;
+Ведение расписания сотрудников отдела;
+Участие в процессе обучения новых и повышении квалификации действующих сотрудников отдела.
+В ходе работы приобрел опыт в принятии ответственных решений и обучении людей.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ведущий специалист технического отдела (Help Desk)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-hd-PLZ">
+                                <rect key="frame" x="5" y="20" width="365" height="44.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JRc-J6-LJe" firstAttribute="top" secondItem="fMg-hd-PLZ" secondAttribute="bottom" constant="10" id="8sv-Xl-ovb"/>
+                            <constraint firstItem="JRc-J6-LJe" firstAttribute="leading" secondItem="X9U-iP-5MX" secondAttribute="leading" id="FxB-Ig-CIb"/>
+                            <constraint firstItem="X9U-iP-5MX" firstAttribute="trailing" secondItem="JRc-J6-LJe" secondAttribute="trailing" id="Hmm-T6-LTo"/>
+                            <constraint firstItem="fMg-hd-PLZ" firstAttribute="top" secondItem="X9U-iP-5MX" secondAttribute="top" id="Oyw-RP-XF7"/>
+                            <constraint firstItem="X9U-iP-5MX" firstAttribute="bottom" secondItem="JRc-J6-LJe" secondAttribute="bottom" id="cDB-Oc-OMH"/>
+                            <constraint firstItem="fMg-hd-PLZ" firstAttribute="leading" secondItem="X9U-iP-5MX" secondAttribute="leading" constant="5" id="eI1-pk-oyA"/>
+                            <constraint firstItem="X9U-iP-5MX" firstAttribute="trailing" secondItem="fMg-hd-PLZ" secondAttribute="trailing" constant="5" id="jpl-EH-vDl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X9U-iP-5MX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second Job" image="second" id="DKt-mV-CoZ"/>
+                    <connections>
+                        <outlet property="textView" destination="JRc-J6-LJe" id="cFt-4H-htV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7n-nh-oN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="764"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4wv-SN-3fu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u6l-Er-97C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SVd-jw-xba">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="i1t-ar-5U3" kind="relationship" relationship="viewControllers" id="udr-C2-0ua"/>
+                        <segue destination="hO6-ex-ZAF" kind="relationship" relationship="viewControllers" id="kfF-MU-WSf"/>
+                        <segue destination="Iqe-wy-uIV" kind="relationship" relationship="viewControllers" id="Jay-rK-AUn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJc-ED-OXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="-14"/>
+        </scene>
+        <!--Third Job-->
+        <scene sceneID="7Rd-mg-iDT">
+            <objects>
+                <viewController id="Iqe-wy-uIV" customClass="ThirdJobViewController" customModule="DZ1_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTn-iz-3S5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="svi-tp-vDf">
+                                <rect key="frame" x="0.0" y="74.5" width="375" height="543.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">- Полная техподдержка предприятия (включая удаленные офисы).
+- Создание технической документации, обучение пользователей.
+- Создание и добавление учётных записей в домен.
+- Windows XP/Vista/7/8/10, Mac OS X, Linux Ubuntu – установка, настройка, поддержка, восстановление после сбоев.
+- Windows Server 2003/2008/2008R2/2012 – установка (в том числе ролей DHCP, AD, DNS, IIS, Файл-сервер, сервер печати, WSUS), настройка, поддержка, восстановление после сбоев.
+- Microsoft Exchange Server 2007 (создание, перенастройка учётных записей, разрешение проблем с доставкой почты).
+- MS SQL установка, настройка, бэкап, обновление баз данных.
+- Почтовый спам-фильтр Barracuda.
+- Различное рекламное ПО TNS Gallup (ADex, Palomars, Supernova, Galileo итп).
+- Опыт установки, настройки, первичного ремонта и апгрейда ноутбуков, мобильных телефонов, планшетов, коммуникаторов.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Специалист по информационным технологиям" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYU-hc-yao">
+                                <rect key="frame" x="5" y="20" width="365" height="44.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pYU-hc-yao" firstAttribute="top" secondItem="4b6-LF-FXz" secondAttribute="top" id="5Hu-C1-Ifc"/>
+                            <constraint firstItem="4b6-LF-FXz" firstAttribute="trailing" secondItem="pYU-hc-yao" secondAttribute="trailing" constant="5" id="708-pN-rP2"/>
+                            <constraint firstItem="svi-tp-vDf" firstAttribute="top" secondItem="pYU-hc-yao" secondAttribute="bottom" constant="10" id="Bp6-3J-w1b"/>
+                            <constraint firstItem="4b6-LF-FXz" firstAttribute="trailing" secondItem="svi-tp-vDf" secondAttribute="trailing" id="UgE-TU-Zug"/>
+                            <constraint firstItem="4b6-LF-FXz" firstAttribute="bottom" secondItem="svi-tp-vDf" secondAttribute="bottom" id="gPQ-0q-3qi"/>
+                            <constraint firstItem="svi-tp-vDf" firstAttribute="leading" secondItem="4b6-LF-FXz" secondAttribute="leading" id="mfg-Ir-g2O"/>
+                            <constraint firstItem="pYU-hc-yao" firstAttribute="leading" secondItem="4b6-LF-FXz" secondAttribute="leading" constant="5" id="uhd-fr-HzM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4b6-LF-FXz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third Job" image="third" id="W17-DT-0b1"/>
+                    <connections>
+                        <outlet property="textView" destination="svi-tp-vDf" id="rcq-Bm-ps5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACd-Ph-rPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="764"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="25" height="23"/>
+        <image name="paint" width="25" height="25"/>
+        <image name="second" width="25" height="21"/>
+        <image name="third" width="25" height="21"/>
+    </resources>
+</document>
